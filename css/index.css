@@ -1,0 +1,25 @@
+@charset 'utf-8';
+
+.content{padding: 0 50px;}
+
+/* 스킵 메뉴 */
+.skip_menu{background:linear-gradient(90deg, red,orange,yellow,green,blue,navy,purple);text-align: center;padding: 10px;
+    position: absolute; top: -100%; left: 0; width: 100%; transition: 0.2s;}
+.skip_menu.active{top:0}
+.skip_menu>p>a{color: white;font-weight: 600;font-size: 20px;}
+.skip_menu>p>a:hover{text-decoration: underline;}
+ 
+/* 헤더 스타일 */
+.header{background-color: black;}
+.article.small_nav,.article.large_nav,.header ul{display:flex;flex-flow:row nowrap;justify-content:space-between;}
+
+.small_nav{border-bottom: 1px solid rgba(255,255,255,0.2);padding-top:10px;padding-bottom:10px;}
+.small_nav ul{width: 20%;}
+.small_nav a{color: rgba(255,255,255,0.6);font-size: 12px;}
+.small_nav a:hover{color:white;}
+
+.large_nav{padding-top:15px;padding-bottom:15px;}
+.large_nav ul{width: 40%;}
+.large_nav ul:first-child{width: 30%;}
+.large_nav a{color:#ccc;font-size: 16px;}
+.large_nav ul:first-child a{color: white;font-size: 20px; font-weight: bolder;}
