@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 기본 */
+.wrap{border-top:5px solid  #d70f26;}
+.content{width: 400px; margin: 0 auto;padding: 20px 0;}
+.color_gray{color: #666;}
+
+/* 로그인폼 */
+.logo_box img{width: 100px;}
+hr{height: 1px; background-color: #ccc;}
+.login_form>li{list-style: disc; text-indent: 20px; padding-bottom: 5px;}
+
+form{display: flex; flex-flow: column nowrap; height: 160px;}
+
+form>input{padding:10px; margin: 5px 0; border: 1px solid #ccc;}
+form>input[type='button']{border: none; background-color: #d70f26; color: white;font-size: large;transition: 0.2s;}
+form>input[type='button']:hover{background-color: #8d0919;}
+
+.id_search{text-align: center; padding: 10px 0;}
+.id_search>span,.join>span{color: #d70f26; cursor: pointer;font-weight: bold;}
+.join{margin-bottom: 20px;}
+.join>p,.join>span{display: inline-block;}

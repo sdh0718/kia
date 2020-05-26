@@ -104,7 +104,7 @@ $(function(){
     });
 
 
-    // 베스트기아슬라이더
+    // 이벤트 채널 기아슬라이더
     var mySwiper2 = new Swiper('.event_kia_slider,.channel_kia_slider', {
         speed:300,
         loop:true,
@@ -123,5 +123,34 @@ $(function(){
 
     });    
 
+    // 기아 뉴스 슬라이더
+    var mySwiper2 = new Swiper('.kia_news_slider', {
+        speed:300,
+        spaceBetween:10,
+        slidesPerView:2.5,
+        loop:true,
+        autoplay:{
+        delay:3000,
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        },
+
+    });    
+
+    //푸터 패밀리사이트 토글버튼 이벤트
+    $('#footer_tgl_btn').click(function(){
+        $('#footer_tgl_btn>ul').toggle();
+    });
+
+    $('#footer_tgl_btn>ul>li').click(function(){
+        var selectValue=$(this).children('a').text();
+        $('#footer_tgl_btn>span').text(selectValue);
+    });
 
 }); 
